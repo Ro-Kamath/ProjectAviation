@@ -1,0 +1,16 @@
+:root { color-scheme: dark; }
+body { margin:0; font-family: system-ui, sans-serif; background:#0f1115; color:#e6e6e6; }
+.hero { min-height:100vh; display:grid; place-content:center; text-align:center; gap:1rem; }
+.hero h1 { font-size:3rem; margin:0; }
+button { padding:.6rem 1.2rem; font-size:1rem; border:0; border-radius:8px;
+         background:#4f8cff; color:#fff; cursor:pointer; }
+button:hover { filter:brightness(1.1); }
+
+.modal { position:fixed; inset:0; background:rgba(0,0,0,.6); display:grid; place-items:center; }
+.modal[hidden] { display:none; }
+.modal-box { background:#1a1d24; padding:2rem; border-radius:12px; width:min(90vw,360px);
+             position:relative; text-align:center; }
+.close { position:absolute; top:.5rem; right:.75rem; background:none; color:#999; font-size:1.5rem; }
+#signup-form { display:flex; flex-direction:column; gap:.75rem; margin-top:1rem; }
+#signup-form input { padding:.6rem; border-radius:8px; border:1px solid #333; background:#0f1115; color:#fff; }
+#status { margin-top:1rem; font-size:.9rem; }   
